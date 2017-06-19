@@ -1,0 +1,81 @@
+BACKUP ~A7-LevelUpTweaks/backup~
+AUTHOR ~Argent77 at Beamdog Forums~
+VERSION ~2.3~
+
+README ~A7-LevelUpTweaks/readme/readme-%LANGUAGE%.txt~
+       ~A7-LevelUpTweaks/readme/readme.txt~
+
+LANGUAGE ~English~
+         ~english~
+         ~A7-LevelUpTweaks/language/english/setup.tra~
+
+
+BEGIN @1  // Enable "level up" icon activation switch in baldur.lua
+  REQUIRE_PREDICATE (GAME_IS ~pstee~) @100  // PST:EE required.
+  DESIGNATED 0
+
+  // baldur.lua section and key strings
+  OUTER_TEXT_SPRINT luaSection ~Game Options~
+  OUTER_TEXT_SPRINT luaKey ~Show Level Up Icon~
+
+  COPY_EXISTING ~ui.menu~ ~override~
+    // adding lua function
+    PATCH_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~) BEGIN
+      TEXT_SPRINT nl ~%WNL%~
+    END ELSE BEGIN
+      TEXT_SPRINT nl ~%LNL%~
+    END
+    TEXT_SPRINT function "end%nl%function isLevelUpIconEnabled()%nl%  return (Infinity_GetINIValue('%luaSection%', '%luaKey%') ~= 0)%nl%"
+    TEXT_SPRINT matchReg ~end[%nl%]+`~
+    SET match = INDEX_BUFFER (CASE_SENSITIVE EVALUATE_REGEXP ~%matchReg%~)
+    PATCH_IF (match > 0) BEGIN
+      INSERT_BYTES match (STRING_LENGTH ~%function%~)
+      WRITE_ASCIIE match ~%function%~ (STRING_LENGTH ~%function%~)
+
+      // updating level up notifications
+      REPLACE_TEXTUALLY
+        ~\(area .+[ %TAB%%WNL%]+\)enabled "\(Infinity_GetNumCharacters() .+ Infinity_CanLevelUp([0-9]).*\)"~
+        ~\1enabled "isLevelUpIconEnabled() and \2"~
+    END ELSE BEGIN
+      PATCH_PRINT ~UI.MENU not updated!~
+    END
+  BUT_ONLY
+
+  // adding option to baldur.lua
+  OUTER_TEXT_SPRINT baldur_lua ~%USER_DIRECTORY%/baldur.lua~
+  OUTER_TEXT_SPRINT option ~SetPrivateProfileString('%luaSection%','%luaKey%','1')%LNL%~
+  ACTION_IF (FILE_EXISTS ~%baldur_lua%~) BEGIN
+    COPY + ~%baldur_lua%~ ~%baldur_lua%~  // do not create backup!!!
+      PATCH_IF (INDEX_BUFFER (~'%luaKey%'~) < 0) BEGIN
+        PATCH_IF (SOURCE_SIZE > 1) BEGIN
+          READ_ASCII (SOURCE_SIZE - 1) newline (1)
+          PATCH_IF (NOT ~%newline%~ STRING_EQUAL ~%LNL%~) BEGIN
+            SET len = STRING_LENGTH ~%LNL%~
+            INSERT_BYTES SOURCE_SIZE len
+            WRITE_ASCIIE SOURCE_SIZE ~%LNL%~
+            SET SOURCE_SIZE += len
+          END
+          SET len = STRING_LENGTH ~%option%~
+          INSERT_BYTES SOURCE_SIZE len
+          WRITE_ASCIIE SOURCE_SIZE ~%option%~
+        END
+      END
+    BUT_ONLY
+  END ELSE BEGIN
+    PRINT ~Could not enable option "%luaKey%" (baldur.lua not found)~
+  END
+
+
+BEGIN @10  // Move "level up" icons into character portraits
+  REQUIRE_COMPONENT ~setup-A7-LevelUpTweaks.tp2~ 0 @101  // Main component required.
+  DESIGNATED 10
+
+  COPY_EXISTING ~ui.menu~ ~override~
+    // updating level up icon location
+    REPLACE_EVALUATE
+      ~\(area [0-9]+\) \([0-9]+\) \(.+[ %TAB%%WNL%]+enabled ".*Infinity_GetNumCharacters() .+ Infinity_CanLevelUp([0-9])\)~
+      BEGIN
+        SET y = MATCH2 - 62
+      END
+      ~\1 %y% \3~
+  BUT_ONLY
