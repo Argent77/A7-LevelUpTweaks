@@ -1,0 +1,7 @@
+// -*- coding: us-ascii -*- 
+
+@1 = ~Attiva il passaggio dell'icona "Livello Superiore" nel file baldur.lua~
+@10 = ~Sposta l'icona "Livello Superiore" nel ritratto del personaggio~
+
+@100 = ~Richiede PST:EE.~
+@101 = ~Componente principale richiesta.~

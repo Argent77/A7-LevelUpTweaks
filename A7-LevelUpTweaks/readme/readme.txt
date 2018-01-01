@@ -46,6 +46,14 @@ This component moves level up icons from the health bar up into the top right co
 the character portraits.
 
 
+Credits
+~~~~~~~
+
+Coding and testing: Argent77
+
+Italian translation: Aedan
+
+
 Copyright Notice
 ~~~~~~~~~~~~~~~~
 
