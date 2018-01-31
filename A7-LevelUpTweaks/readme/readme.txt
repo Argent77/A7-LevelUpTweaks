@@ -2,7 +2,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Author:     Argent77
-Version:    2.3
+Version:    2.4
 
 Download:   https://github.com/Argent77/A7-LevelUpTweaks/releases/latest
 Discussion: https://forums.beamdog.com/discussion/64259/mod-level-up-icon-tweaks
@@ -63,6 +63,9 @@ International License" (http://creativecommons.org/licenses/by-sa/4.0/).
 
 History
 ~~~~~~~
+
+2.4
+- Added Italian translation (thanks Aedan)
 
 2.3
 - Traified setup messages
