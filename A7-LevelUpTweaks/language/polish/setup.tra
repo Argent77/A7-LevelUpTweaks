@@ -1,0 +1,7 @@
+// -*- coding: us-ascii -*- 
+
+@1 = ~Umozliwia wlaczenie ikony zmiany poziomu w pliku baldur.lua~
+@10 = ~Przenosi ikone zmiany poziomu na portret postaci~
+
+@100 = ~Wymagane PST:EE~
+@101 = ~Wymagany glowny komponent~

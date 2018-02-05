@@ -52,6 +52,7 @@ Credits
 Coding and testing: Argent77
 
 Italian translation: Aedan
+Polish translation: memory (Stars of Mystra translation group)
 
 
 Copyright Notice
@@ -63,6 +64,9 @@ International License" (http://creativecommons.org/licenses/by-sa/4.0/).
 
 History
 ~~~~~~~
+
+2.5
+- Added Polish translation (thanks memory)
 
 2.4
 - Added Italian translation (thanks Aedan)
