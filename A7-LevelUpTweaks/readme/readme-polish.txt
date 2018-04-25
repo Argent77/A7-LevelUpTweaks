@@ -2,7 +2,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Author:     Argent77
-Version:    2.4
+Version:    2.5
 
 Download:   https://github.com/Argent77/A7-LevelUpTweaks/releases/latest
 Discussion: https://forums.beamdog.com/discussion/64259/mod-level-up-icon-tweaks
