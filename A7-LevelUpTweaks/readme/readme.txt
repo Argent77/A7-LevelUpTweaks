@@ -5,7 +5,9 @@ Author:     Argent77
 Version:    2.5
 
 Download:   https://github.com/Argent77/A7-LevelUpTweaks/releases/latest
+            http://www.shsforums.net/files/file/1222-level-up-icon-tweaks/
 Discussion: https://forums.beamdog.com/discussion/64259/mod-level-up-icon-tweaks
+            http://www.shsforums.net/topic/60061-level-up-icon-tweaks-pstee/
 
 
 Overview
