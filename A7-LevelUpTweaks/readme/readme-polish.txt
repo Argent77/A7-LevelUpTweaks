@@ -66,6 +66,10 @@ International License" (http://creativecommons.org/licenses/by-sa/4.0/).
 History
 ~~~~~~~
 
+2.6
+- Added German readme and translation
+- Updated links in readme
+
 2.5
 - Added Polish readme and translation (thanks memory)
 
