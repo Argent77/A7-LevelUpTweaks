@@ -2,7 +2,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Autor:      Argent77
-Version:    2.5
+Version:    2.6
 
 Download:   https://github.com/Argent77/A7-LevelUpTweaks/releases/latest
             http://www.shsforums.net/files/file/1222-level-up-icon-tweaks/
