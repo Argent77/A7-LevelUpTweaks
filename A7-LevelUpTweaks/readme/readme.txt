@@ -57,6 +57,8 @@ Italian translation: Aedan
 
 Polish translation: memory (Stars of Mystra)
 
+French translation: jazira
+
 
 Copyright Notice
 ~~~~~~~~~~~~~~~~
@@ -67,6 +69,9 @@ International License" (http://creativecommons.org/licenses/by-sa/4.0/).
 
 History
 ~~~~~~~
+
+2.7
+- Added French translation (thanks jazira)
 
 2.6
 - Added German readme and translation

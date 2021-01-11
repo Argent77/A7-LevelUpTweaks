@@ -23,6 +23,11 @@ LANGUAGE ~German~
          ~german~
          ~A7-LevelUpTweaks/language/english/setup.tra~
          ~A7-LevelUpTweaks/language/german/setup.tra~
+		 
+LANGUAGE ~French (by jazira)~
+         ~french~
+         ~A7-LevelUpTweaks/language/english/setup.tra~
+         ~A7-LevelUpTweaks/language/french/setup.tra~
 
 
 BEGIN @1  // Enable "level up" icon activation switch in baldur.lua
