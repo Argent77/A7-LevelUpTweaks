@@ -1,6 +1,13 @@
-BACKUP ~A7-LevelUpTweaks/backup~
+BACKUP ~weidu_external/backup/A7-LevelUpTweaks~
 SUPPORT ~https://forums.beamdog.com/discussion/64259~
 VERSION ~2.6~
+
+ALWAYS
+  // required because of non-standard BACKUP path
+  OUTER_TEXT_SPRINT MOD_FOLDER ~A7-LevelUpTweaks~
+  // root folder for mutable data
+  OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external~
+END
 
 README ~A7-LevelUpTweaks/readme/readme-%LANGUAGE%.txt~
        ~A7-LevelUpTweaks/readme/readme.txt~
