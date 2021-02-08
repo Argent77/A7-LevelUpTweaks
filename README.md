@@ -1,13 +1,13 @@
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Argent77/A7-LevelUpTweaks?color=darkred&include_prereleases&label=latest%20release)](https://GitHub.com/Argent77/A7-LevelUpTweaks/releases/latest)
-[![GitHub release date (latest by date)](https://img.shields.io/github/release-date/Argent77/A7-LevelUpTweaks?color=gold)](https://GitHub.com/Argent77/A7-LevelUpTweaks/releases/latest)
-[![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/A7-LevelUpTweaks/total.svg?color=blueviolet)](https://GitHub.com/Argent77/A7-LevelUpTweaks/releases)
-[![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux&color=informational)](https://GitHub.com/Argent77/A7-LevelUpTweaks/releases/latest)
-[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Polish&color=limegreen)]()
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Argent77/A7-LevelUpTweaks?color=darkred&include_prereleases&label=latest%20release)](https://github.com/Argent77/A7-LevelUpTweaks/releases/latest)
+[![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/A7-LevelUpTweaks/total.svg?color=gold)](https://github.com/Argent77/A7-LevelUpTweaks/releases)
+[![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux&color=informational)](https://github.com/Argent77/A7-LevelUpTweaks/releases/latest)
+[![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=PST%3AEE&color=indigo)](https://github.com/Argent77/A7-LevelUpTweaks)
+[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Polish&color=limegreen)](https://github.com/Argent77/A7-LevelUpTweaks)
 
 # "Level Up" Icon Tweaks
 *A tweak mod for PST:EE that allows more control over the display of level up icons*
 
-[![Beamdog Forums](https://img.shields.io/static/v1?label=Discussion&message=Beamdog%20Forums&color=444&labelColor=eee&style=flat)](https://forums.beamdog.com/discussion/64259)
+[![Beamdog Forums](https://img.shields.io/static/v1?label=Discussion&message=Beamdog%20Forums&color=444&labelColor=eee&style=for-the-badge)](https://forums.beamdog.com/discussion/64259 "Beamdog Forums")
 
 ## Overview
 
