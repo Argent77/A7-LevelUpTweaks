@@ -2,7 +2,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Autor:      Argent77
-Version:    2.6
+Version:    2.7
 
 Download:   https://github.com/Argent77/A7-LevelUpTweaks/releases/latest
             http://www.shsforums.net/files/file/1222-level-up-icon-tweaks/
@@ -56,6 +56,8 @@ Credits
 
 Coding and testing: Argent77
 
+French translation: Jazira
+
 Italian translation: Aedan
 
 Polish translation: memory (Stars of Mystra)
@@ -72,7 +74,8 @@ History
 ~~~~~~~
 
 2.7
-- Added French translation (thanks jazira)
+- Added French translation (thanks Jazira)
+- Added Project Infinity support
 
 2.6
 - Added German readme and translation
