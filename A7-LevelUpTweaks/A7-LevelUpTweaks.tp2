@@ -40,6 +40,7 @@ LANGUAGE ~French (by jazira)~
 BEGIN @1  // Enable "level up" icon activation switch in baldur.lua
   REQUIRE_PREDICATE (GAME_IS ~pstee~) @100  // PST:EE required.
   DESIGNATED 0
+  LABEL ~A7-LEVELUPTWEAKS-MAIN~
 
   // baldur.lua section and key strings
   OUTER_TEXT_SPRINT luaSection ~Game Options~
@@ -96,6 +97,7 @@ BEGIN @1  // Enable "level up" icon activation switch in baldur.lua
 BEGIN @10  // Move "level up" icons into character portraits
   REQUIRE_COMPONENT ~A7-LevelUpTweaks.tp2~ 0 @101  // Main component required.
   DESIGNATED 10
+  LABEL ~A7-LEVELUPTWEAKS-ICON_IN_PORTRAIT~
 
   COPY_EXISTING ~ui.menu~ ~override~
     // updating level up icon location
